@@ -11,7 +11,7 @@
       docker_image:
       name: web
       path: docker
-      state: build    
+     state: build    
     - name: Running the container
       docker_container:
       image: web:latest
