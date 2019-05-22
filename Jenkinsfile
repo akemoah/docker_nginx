@@ -1,5 +1,5 @@
 pipeline{
-agent build
+agent any
   stages{
     stage("Déploiement Nginx avec docker") {
       step{
