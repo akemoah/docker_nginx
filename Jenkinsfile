@@ -1,14 +1,15 @@
-pipeline{
-agent any
-  stages{
-    stage("Déploiement Nginx avec docker") {
-      step{
-        ansiblePlaybook(
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+              ansiblePlaybook(
         colorized: true, 
         become: true,
         playbook: 'main.yml'
         )
-      }
+            }
+        }
     }
-  }
 }
