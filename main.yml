@@ -1,5 +1,5 @@
   - hosts: webserver
-      remote_user: root
+      #remote_user: root
       become: yes
       become_method: sudo
       tasks:
