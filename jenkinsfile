@@ -1,7 +1,7 @@
 node('build') {
   stage ("Déploiement Nginx avec docker") {
     ansiblePlaybook(
-    colorized: true, 
+      colorized: true, 
       become: true,
       playbook: 'main.yml'
      )
