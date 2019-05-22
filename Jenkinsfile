@@ -6,6 +6,7 @@ pipeline {
               ansiblePlaybook(
         colorized: true, 
         become: true,
+        inventory: hosts,
         playbook: 'main.yml'
         )
             }
