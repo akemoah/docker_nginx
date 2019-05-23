@@ -1,2 +1,0 @@
-[webserver]
-docker_machine ansible_ssh_host=192.168.10.6
