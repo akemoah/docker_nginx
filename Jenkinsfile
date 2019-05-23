@@ -7,7 +7,7 @@ pipeline {
         colorized: true, 
         become: true,
         playbook: 'main.yml',
-        inventory: 'hosts'
+        inventory: 'hosts.inv'
         )
             }
         }
