@@ -9,9 +9,9 @@
       pip: name=docker-py
     - name: Build Docker image from Dockerfile
       docker_image:
-      name: web
-      path: docker
-      state: build    
+        name: web
+        path: docker
+        state: build    
     - name: Running the container
       docker_container:
       image: web:latest
