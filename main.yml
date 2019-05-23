@@ -1,8 +1,10 @@
-- hosts: webserver
+- hosts: all
   remote_user: vagrant
   become: yes
   become_method: sudo
   tasks:
+    - name: Test connection to server
+      ping: webserver
     - name: Install pip
       apt: name=python-pip state=present 
     - name: install docker-py
