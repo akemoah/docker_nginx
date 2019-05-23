@@ -4,7 +4,7 @@
   become_method: sudo
   tasks:
     - name: Test connection to server
-      ping: webserver
+      shell: ping
     - name: Install pip
       apt: name=python-pip state=present 
     - name: install docker-py
