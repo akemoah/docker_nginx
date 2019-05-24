@@ -5,8 +5,7 @@ pipeline {
             steps {
               ansiblePlaybook(
         colorized: true,
-        sudo: true,
-        //become: true,
+        become: true,
         playbook: 'main.yml',
         inventory: 'hosts.ini'
         )
