@@ -4,8 +4,9 @@ pipeline {
         stage('Build') {
             steps {
               ansiblePlaybook(
-        colorized: true, 
-        become: true,
+        colorized: true,
+        sudo: true,
+        #become: true,
         playbook: 'main.yml',
         inventory: 'hosts.ini'
         )
