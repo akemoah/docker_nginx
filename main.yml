@@ -4,9 +4,9 @@
   become: yes
   become_method: sudo
   tasks:
-    - name: Test connection to server
-      ping:
-        data: crash
+   # - name: Test connection to server
+   #   ping:
+   #     data: crash
     - name: Install pip
       apt: name=python-pip state=present 
     - name: install docker-py
