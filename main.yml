@@ -5,11 +5,7 @@
     tasks:
       - name: Install pip
         apt-get: name=python3-apt state=present
-
-     # - name: Ping the host to verify connection
-     #   ping:
-     #     data: crash
-      
+    
       - name: install docker-py
         pip: name=docker-py
       
