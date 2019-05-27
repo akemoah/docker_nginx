@@ -14,7 +14,7 @@
       - name: Build Docker image from Dockerfile
         docker_image:
           name: web
-          build.path: docker
+          build: docker
           state: present
         
       - name: Running the container
