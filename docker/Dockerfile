@@ -1,5 +1,5 @@
 # Version: 0.0.1
-FROM debian:8.5
+FROM scratch
 MAINTAINER Arnauld KEMOAH "arnauldk@live.fr "
 RUN apt-get update
 RUN apt-get install -y nginx
