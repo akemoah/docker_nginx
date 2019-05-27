@@ -25,5 +25,5 @@
           path: docker
           state: running
             
-        - name: Check if container is running
-          shell: docker ps
+      - name: Check if container is running
+        shell: docker ps
