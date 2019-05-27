@@ -7,7 +7,8 @@ pipeline {
         colorized: true,
         //become: true,
         playbook: 'main.yml',
-        inventory: 'hosts.ini'
+        inventory: 'hosts.ini',
+        credentialsId: 'ssh-key',
         )
             }
         }
